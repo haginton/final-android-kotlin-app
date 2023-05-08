@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Store App Harrison</string>
+    <string name="welcome_store_app">Welcome Store App</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="button">Button</string>
 </resources>
