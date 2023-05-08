@@ -3,7 +3,7 @@ package com.ada.storeappharrison.storage.sharedpreferences
 import android.content.SharedPreferences
 import com.ada.storeappharrison.utils.TOKEN_KEY
 
-class SharedPreferencesStorage(private val sharedPreferences: SharedPreferences): Storage {
+class SharedPreferencesStorage(private val sharedPreferences: SharedPreferences): StorageToken {
     override fun saveToken(token: String) {
         sharedPreferences.edit()
             .putString(TOKEN_KEY, token)
