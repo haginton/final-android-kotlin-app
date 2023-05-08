@@ -1,5 +1,6 @@
 package com.ada.storeappharrison.ui.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -57,6 +58,13 @@ class LoginActivity: AppCompatActivity() {
                 Log.d("AndroidKotlinAda", "Login success with the token: ${token?.token}")
                 storageToken.saveToken(token!!.token)
                 Log.d("AndroidKotlinAda", "shared preferences saved ok with the token from shared preferences: ${storageToken.getToken()}")
+                runOnUiThread {
+                    Intent(this@LoginActivity, MainActivity::class.java).also {
+                        startActivity(it)
+                        Log.d("AndroidKotlinAda", "After Login success the MainActivity will open, because the JWT is not empty: ${storageToken.getToken()}")
+                        finish()
+                    }
+                }
             }else {
                 //codigo de respuesta si hay error en la autenticación para generar el JWT
                 runOnUiThread {
