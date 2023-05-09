@@ -68,7 +68,7 @@ class LoginActivity: AppCompatActivity() {
             }else {
                 //codigo de respuesta si hay error en la autenticación para generar el JWT
                 runOnUiThread {
-                    Toast.makeText(this@LoginActivity, "Credenciales incorrectas", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@LoginActivity, getText(R.string.incorrect_credentials), Toast.LENGTH_SHORT).show()
                 }
 
             }

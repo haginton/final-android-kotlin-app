@@ -3,8 +3,9 @@
     <string name="welcome_store_app">Welcome Store App</string>
     <string name="email">email</string>
     <string name="password">password</string>
-    <string name="button">Button</string>
+    <string name="button">Login</string>
     <string name="search_help">Type the Product Id</string>
     <string name="search">SEARCH</string>
     <string name="no_product_found">No product found</string>
+    <string name="incorrect_credentials">Incorrect Credentials</string>
 </resources>
