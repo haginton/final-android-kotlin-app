@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.room.Room
 import com.ada.storeappharrison.network.JWTInterceptor
 import com.ada.storeappharrison.network.service.AuthService
+import com.ada.storeappharrison.network.service.ListProductsService
 import com.ada.storeappharrison.network.service.ProductsService
 import com.ada.storeappharrison.storage.room.AppDatabase
 import com.ada.storeappharrison.storage.room.dao.ProductDao
@@ -39,6 +40,11 @@ object AppModule {
             appContext,
             AppDatabase::class.java, "database-name"
         ).build()
+    }
+
+    @Provides
+    fun provideListProductService(retrofit: Retrofit): ListProductsService {
+        return retrofit.create(ListProductsService::class.java)
     }
 
     @Provides
