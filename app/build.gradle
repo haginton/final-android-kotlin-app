@@ -55,10 +55,10 @@ dependencies {
     implementation "com.google.dagger:hilt-android:2.44"
     kapt "com.google.dagger:hilt-compiler:2.44"
 
-    //Library JWT
-    implementation 'io.jsonwebtoken:jjwt-api:0.11.2'
-    implementation 'io.jsonwebtoken:jjwt-impl:0.11.2'
-    implementation 'io.jsonwebtoken:jjwt-jackson:0.11.2'
+    //Room
+    implementation 'androidx.room:room-runtime:2.5.1'
+    kapt 'androidx.room:room-compiler:2.5.1'
+    implementation 'androidx.room:room-ktx:2.5.1'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

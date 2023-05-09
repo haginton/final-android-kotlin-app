@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.ada.storeappharrison.storage.sharedpreferences.StorageToken
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
-import io.jsonwebtoken.Jwts
 
 @AndroidEntryPoint
 class LauncherActivity: AppCompatActivity() {
