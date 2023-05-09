@@ -41,12 +41,13 @@ class RecyclerActivity : AppCompatActivity() {
         //setContentView(R.layout.activity_main)
         binding = ActivityRecyclerBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        configureRecyclerView()
         viewModel = ViewModelProvider(this)[RecyclerActivityViewModel::class.java]
 
         //val idProduct = "6459a2eb7fa14d501011999f"
 
+        setClickListeners()
         addLiveDataObservers()
-        setListeners()
 
     }
 
@@ -58,8 +59,11 @@ class RecyclerActivity : AppCompatActivity() {
         }
     }
 
-    private fun setListeners() {
-        viewModel.queryProductsDataRecycler()
+    private fun setClickListeners() {
+        binding.searchButton.setOnClickListener{
+            binding.progressBar.visibility = View.VISIBLE
+            viewModel.queryProductsDataRecycler()
+        }
     }
 
 
