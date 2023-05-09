@@ -9,4 +9,6 @@
     <string name="no_product_found">No product found</string>
     <string name="incorrect_credentials">Incorrect Credentials</string>
     <string name="product_poster_image">product poster image</string>
+    <string name="search_by_id">Search By Id</string>
+    <string name="search_all">Search All</string>
 </resources>

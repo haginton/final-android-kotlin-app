@@ -59,9 +59,9 @@ class LoginActivity: AppCompatActivity() {
                 storageToken.saveToken(token!!.token)
                 Log.d("AndroidKotlinAda", "shared preferences saved ok with the token from shared preferences: ${storageToken.getToken()}")
                 runOnUiThread {
-                    Intent(this@LoginActivity, MainActivity::class.java).also {
+                    Intent(this@LoginActivity, ChooseActivity::class.java).also {
                         startActivity(it)
-                        Log.d("AndroidKotlinAda", "After Login success the MainActivity will open, because the JWT is not empty: ${storageToken.getToken()}")
+                        Log.d("AndroidKotlinAda", "After Login success the ChooseActivity will open, because the JWT is not empty: ${storageToken.getToken()}")
                         finish()
                     }
                 }

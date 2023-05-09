@@ -20,6 +20,8 @@
 
         <activity android:name=".ui.activity.RecyclerActivity"/>
 
+        <activity android:name=".ui.activity.ChooseActivity"/>
+
         <activity
             android:exported="true"
             android:name=".ui.activity.LauncherActivity">

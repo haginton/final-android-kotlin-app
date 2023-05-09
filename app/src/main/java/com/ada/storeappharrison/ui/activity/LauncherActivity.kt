@@ -17,9 +17,9 @@ class LauncherActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         if (storageToken.isAuthenticated()!!){
-            Intent(this, MainActivity::class.java).also {
+            Intent(this, ChooseActivity::class.java).also {
                 startActivity(it)
-                Log.d("AndroidKotlinAda", "The activity MainActivity will open, because the JWT is not empty: ${storageToken.getToken()}")
+                Log.d("AndroidKotlinAda", "The activity ChooseActivity will open, because the JWT is not empty: ${storageToken.getToken()}")
                 finish()
             }
         }else {
