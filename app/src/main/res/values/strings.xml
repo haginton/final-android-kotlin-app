@@ -4,4 +4,6 @@
     <string name="email">email</string>
     <string name="password">password</string>
     <string name="button">Button</string>
+    <string name="search_help">Type the Product Id</string>
+    <string name="search">SEARCH</string>
 </resources>
